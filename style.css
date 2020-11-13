@@ -1,0 +1,129 @@
+*,
+::before,
+::after,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-color: #6964e2;
+    --dark-color: #102b3e;
+    --white-color: #ced8e1;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    background: var(--white-color);
+}
+
+.container {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Intro */
+
+.intro {
+    height: 100vh;
+}
+
+.header {
+    height: 12vh;
+}
+
+.title {
+    line-height: 12vh;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.intro__inner {
+    display: flex;
+    align-items: center;
+    height: 76vh;
+    background: var(--dark-color);
+    background: no-repeat url("assets/images/Jeff-Bezos.jpg");
+    background-size: cover;
+}
+
+.quote {
+    font-size: 26px;
+    color: var(--white-color);
+    position: relative;
+}
+
+.portrait {
+    height: 100%;
+}
+
+/* Section */
+
+.section {
+    padding: 20px 300px;
+    color: var(--dark-color);
+}
+
+.section__header {
+    margin: 25px 0;
+}
+
+.section__text {
+    font-size: 18px;
+}
+
+.section__text p {
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+/* Amazon sales */
+
+.amazon-sales {
+    margin: 20px auto;
+    height: 110px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+.amazon-sales::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 50px;
+    border-top: 3px solid var(--light-color);
+    border-left: 3px solid var(--light-color);
+}
+
+.amazon-sales::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 100px;
+    height: 50px;
+    border-bottom: 3px solid var(--light-color);
+    border-right: 3px solid var(--light-color);
+}
+
+.amount {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 32px;
+    color: var(--light-color);
+}
+
+.caption {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    font-size: 18px;
+}
